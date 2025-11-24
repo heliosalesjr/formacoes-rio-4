@@ -31,11 +31,11 @@ const AvaIntro = () => {
       {/* Título Principal */}
       <div className="text-center space-y-4">
         <div className="flex items-center justify-center gap-3">
-          <div className="w-1 h-12 bg-gradient-to-b from-slate-500 to-green-500 rounded-full"></div>
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-green-700 to-blue-700 bg-clip-text text-transparent">
+          
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-green-700 to-blue-700 bg-clip-text text-transparent py-4">
             A culminância do projeto: o que é e para que serve?
           </h1>
-          <div className="w-1 h-12 bg-gradient-to-b from-green-500 to-slate-500 rounded-full"></div>
+          
         </div>
         <p className="text-slate-600 text-lg max-w-4xl mx-auto leading-relaxed">
          Quando chegamos ao fim de um projeto, não se trata apenas de “terminar o conteúdo”. A culminância é o momento em que paramos para olhar para trás e pensar: o que fizemos juntos? O que aprendemos? O que queremos mostrar para os outros? Ela funciona como uma síntese, um encerramento com sentido, e ajuda os estudantes a enxergar o percurso que fizeram.
@@ -124,8 +124,7 @@ const AvaIntro = () => {
         
         <div className="md:col-span-2 space-y-6 flex flex-col justify-center order-1 md:order-2">
           <div className="flex items-center gap-3">
-            <div className="w-1 h-8 bg-gradient-to-b from-blue-500 to-green-500 rounded-full"></div>
-            <h2 className="text-2xl font-bold text-slate-800">Resumindo:</h2>
+            
           </div>
           
           <p className="text-slate-700 text-base leading-relaxed">

@@ -33,11 +33,11 @@ const CulmComo = () => {
       {/* Título Principal */}
       <div className="text-center space-y-4">
         <div className="flex items-center justify-center gap-3">
-          <div className="w-1 h-12 bg-gradient-to-b from-slate-500 to-green-500 rounded-full"></div>
+          
           <h1 className="text-4xl font-bold bg-gradient-to-r from-green-700 to-blue-700 bg-clip-text text-transparent">
             Como organizar?
           </h1>
-          <div className="w-1 h-12 bg-gradient-to-b from-green-500 to-slate-500 rounded-full"></div>
+          
         </div>
       </div>
 

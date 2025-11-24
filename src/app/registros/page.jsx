@@ -11,7 +11,7 @@ export default function Diagnostico() {
       <main >
         <Hero
                 title="Registros"
-                subtitle="Como funciona o programa “Aprendendo a lidar com dinheiro” da BEĨ Educação e a metodologia de aplicação do material"
+                subtitle="A importância dos registros para organizar a Culminância do Projeto"
                 />
        
        <RegistrosContentSection />

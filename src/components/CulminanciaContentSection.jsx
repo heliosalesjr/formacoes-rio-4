@@ -6,6 +6,7 @@ import AvaIntro from "./content/AvaIntro"
 
 import CulmComo from "./content/CulmComo"
 import CulmPossibilidades from "./content/CulmPossibilidades"
+import CulmPossibilidades2 from "./content/CulmPossibilidades2"
 import CulmAprofundando from "./content/CulmAprofundando"
 import CulmExemplos from "./content/CulmExemplos"
 
@@ -25,11 +26,10 @@ export default function CulminanciaContentSection() {
               <CulmComo />
             </FadeInWhenVisible>
             <FadeInWhenVisible>
-              <CulmPossibilidades />
+              
+              <CulmPossibilidades2 />
             </FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <CulmAprofundando />
-            </FadeInWhenVisible>
+           
             <FadeInWhenVisible>
               <CulmExemplos />
             </FadeInWhenVisible>

@@ -36,7 +36,7 @@ const navigation = {
       { id: 'avaliacao-intro', title: 'A culminância do projeto' },
       { id: 'culminancia-como', title: 'Como organizar?' },
       { id: 'culminancia-exemplos', title: 'Possibilidades de culminância' },
-      { id: 'culminancia-aprofundando', title: 'Aprofundando' },
+     
       { id: 'exemplos-praticos', title: 'Exemplos práticos' },
       
       

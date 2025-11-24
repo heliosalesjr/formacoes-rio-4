@@ -31,11 +31,11 @@ const CulmExemplos = () => {
       {/* Título Principal */}
       <div className="text-center space-y-6">
         <div className="flex items-center justify-center gap-3">
-          <div className="w-1 h-12 bg-gradient-to-b from-green-500 to-blue-500 rounded-full"></div>
+          
           <h1 className="text-4xl font-bold text-slate-600">
             Exemplos práticos
           </h1>
-          <div className="w-1 h-12 bg-gradient-to-b from-blue-500 to-green-500 rounded-full"></div>
+          
         </div>
       </div>
 
@@ -54,6 +54,10 @@ const CulmExemplos = () => {
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-6 space-y-6">
+
+              {/* IMG NOVA */}
+              <img src="/sustentabilidade.jpg" alt="Sustentabilidade" className="w-full rounded-lg mb-6" />
+
               <p className="text-slate-700 leading-relaxed">
                 Professores organizaram com os estudantes uma feira com estandes temáticos sobre consumo, publicidade e sustentabilidade. Cada grupo apresentou:
               </p>
@@ -143,6 +147,10 @@ const CulmExemplos = () => {
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-6 space-y-6">
+
+              {/* IMG NOVA */}
+              <img src="/cartazes.png" alt="Cartazes" className="w-full rounded-lg mb-6" />
+
               <p className="text-slate-700 leading-relaxed">
                 Algumas turmas montaram uma exposição com cartazes feitos em grupo sobre temas como:
               </p>
@@ -226,6 +234,10 @@ const CulmExemplos = () => {
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-6 space-y-6">
+
+              {/* IMG NOVA */}
+              <img src="/dialogo.png" alt="Diálogo" className="w-full rounded-lg mb-6" />
+
               <p className="text-slate-700 leading-relaxed">
                 Alguns professores convidaram apenas os familiares dos estudantes para uma roda de conversa onde cada aluno compartilhou:
               </p>
@@ -264,6 +276,10 @@ const CulmExemplos = () => {
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-6 space-y-6">
+
+              {/* IMG NOVA */}
+              <img src="/simula.png" alt="Simulação" className="w-full rounded-lg mb-6" />
+
               <p className="text-slate-700 leading-relaxed">
                 Em uma escola rural, a culminância foi a realização de uma simulação prática. Cada grupo recebeu um "orçamento" fictício e precisou tomar decisões com base em uma planilha. Depois, apresentaram:
               </p>
