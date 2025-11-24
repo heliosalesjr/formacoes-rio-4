@@ -30,11 +30,11 @@ const MAAvPares = () => {
       {/* Título Principal */}
       <div ref={ref} id="ma-av-pares" className="scroll-mt-20 text-center space-y-6">
         <div className="flex items-center justify-center gap-3">
-          <div className="w-1 h-12 bg-gradient-to-b from-slate-500 to-blue-500 rounded-full"></div>
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent">
+          
+          <h1 className="text-4xl font-bold text-slate-600">
             Avaliação entre pares: como fazer?
           </h1>
-          <div className="w-1 h-12 bg-gradient-to-b from-blue-500 to-slate-500 rounded-full"></div>
+          
         </div>
       </div>
 
@@ -42,7 +42,7 @@ const MAAvPares = () => {
       <div className="grid lg:grid-cols-2 gap-8 items-center">
         <div className="space-y-6">
           <p className="text-slate-700 text-lg leading-relaxed">
-            A avaliação entre pares é uma etapa importante para que os estudantes compreendam o valor do feedback como parte do processo de aprendizagem. Ao observar e comentar o trabalho do colega, buscando fazer isso com respeito e objetividade, começam a desenvolver a capacidade de argumentar, justificar suas observações e acolher diferentes pontos de vista.
+            A avaliação entre pares é uma <strong>etapa importante</strong> para que os estudantes compreendam o <strong>valor do feedback</strong> como parte do processo de aprendizagem. Ao observar e comentar o trabalho do colega, buscando fazer isso com <strong>respeito e objetividade</strong>, começam a desenvolver a <strong>capacidade de argumentar</strong>, justificar suas observações e <strong>acolher diferentes pontos de vista</strong>.
           </p>
           
           <blockquote className="border-l-4 border-blue-500 pl-6 italic text-slate-600 bg-slate-50 rounded-r-lg p-4">
@@ -240,10 +240,20 @@ const MAAvPares = () => {
                   guiadas por roteiro simples.
                 </p>
               </div>
+              
             </div>
           </div>
+          
         </div>
+        
       </div>
+
+        <div className="space-y-6 pb-4">
+                <h1 className='text-center font-bold text-3xl text-slate-600'>Conclusão</h1>
+                <p className="text-slate-700 text-lg leading-relaxed">
+                    A avaliação entre pares é uma <strong>etapa importante</strong> para que os estudantes compreendam o <strong>valor do feedback </strong>como parte do processo de aprendizagem. Ao observar e comentar o trabalho do colega, buscando fazer isso com <strong>respeito e objetividade</strong>, começam a desenvolver a <strong>capacidade de argumentar</strong>, justificar suas observações e <strong>acolher diferentes pontos de vista</strong>.
+                </p>
+        </div>
     </div>
   )
 }

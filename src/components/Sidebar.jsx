@@ -8,20 +8,13 @@ const navigation = {
     path: '/',
     components: [
       { id: 'apresentacao-1', title: 'Apresentação do Curso' },
-      { id: 'modulo-3-objetivos', title: 'Objetivos do Módulo 3' },
+      
       { id: 'ao-final', title: 'Ao final do módulo...' },
+      { id: 'concluir', title: 'Concluir e Apresentar' },
       
     ]
   },
-  'Onde Estamos?': {
-    path: '/ondeestamos',
-    components: [
-      { id: 'onde-estamos-projeto', title: 'Onde estamos no Projeto?' },
-      { id: 'oeppda68', title: 'Etapas de Desenvolvimento do Projeto' },
-      { id: 'oepratica', title: 'Na Prática' },
-      
-    ]
-  },
+  
   'Métodos Avaliativos': {
     path: '/metodosavaliativos',
     components: [

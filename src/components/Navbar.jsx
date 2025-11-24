@@ -15,7 +15,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Módulo 4", href: "/" },
     
-    { name: "Onde Estamos?", href: "/ondeestamos" },
+   
     { name: "Métodos Avaliativos", href: "/metodosavaliativos" },
     { name: "Culminância", href: "/culminancia" },
     { name: "Registros", href: "/registros" },

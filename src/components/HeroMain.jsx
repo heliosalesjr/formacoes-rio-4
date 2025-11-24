@@ -71,10 +71,10 @@ export default function HeroMain({
 
            
             <h1
-              className="text-2xl sm:text-3xl font-thin text-white mt-3 tracking-wide"
+              className="text-xl md:text-2xl font-thin text-white mt-3 tracking-wide"
               style={{ fontFamily: "Open Sans, sans-serif" }}
             >
-              Módulo 4
+              Módulo 4 - Como avaliar os resultados e concluir o ano apresentando os projetos desenvolvidos
             </h1>
 
             {/* Button */}

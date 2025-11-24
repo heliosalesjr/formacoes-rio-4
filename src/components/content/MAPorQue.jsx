@@ -34,11 +34,11 @@ const MAPorQue = () => {
       {/* Título Principal */}
       <div className="text-center space-y-8 relative">
         <div className="flex items-center justify-center gap-4">
-          <div className="w-1.5 h-16 bg-gradient-to-b from-green-500 to-blue-500 rounded-full shadow-lg"></div>
+          
           <h1 className="text-4xl font-extrabold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent tracking-tight">
-            O que é e por quê fazer autoavaliação?
+            O que é e por que fazer autoavaliação?
           </h1>
-          <div className="w-1.5 h-16 bg-gradient-to-b from-green-400 to-blue-400 rounded-full shadow-lg"></div>
+          
         </div>
         
         {/* Definição principal com design moderno */}
@@ -120,15 +120,13 @@ const MAPorQue = () => {
             
             <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/30">
               <p className="text-slate-700 text-lg leading-relaxed">
-                A autoavaliação, além de ser uma ferramenta importante durante a vida escolar, tem um papel ainda mais relevante quando pensamos no futuro profissional dos estudantes. No ambiente de trabalho, é comum que as pessoas precisem revisar suas próprias entregas, identificar pontos de melhoria e buscar formas de se desenvolver sem depender exclusivamente do olhar de um gestor.
+                A <strong>autoavaliação</strong>, além de ser uma ferramenta importante durante a vida escolar, tem um papel ainda mais relevante quando pensamos no futuro <strong>profissional</strong> dos estudantes. No <strong>ambiente de trabalho</strong>, é comum que as pessoas precisem <strong>revisar suas próprias entregas</strong>, identificar <strong>pontos de melhoria</strong> e buscar formas de se <strong>desenvolver</strong> sem depender exclusivamente do olhar de um gestor.
+
+                Por isso, ao propor momentos de <strong>reflexão</strong> em sala de aula, o professor contribui para a formação de um <strong>hábito</strong> que será essencial ao longo da vida.
               </p>
             </div>
             
-            <div className="mt-6 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm rounded-xl p-6 border border-blue-200/30">
-              <p className="text-slate-700 text-lg leading-relaxed font-medium">
-                Por isso, ao propor momentos de reflexão em sala de aula, o professor contribui para a formação de um hábito que será essencial ao longo da vida.
-              </p>
-            </div>
+            
           </div>
         </div>
       </div>

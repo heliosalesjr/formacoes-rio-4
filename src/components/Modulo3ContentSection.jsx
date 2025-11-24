@@ -9,6 +9,7 @@ import PageApresentacao1 from "./content/PageApresentacao1"
 
 
 import PageApresentacao2 from "./content/PageApresentacao2"
+import PageConcluirApresentar from "./content/PageConcluirApresentar"
 
 
 export default function Modulo3ContentSection() {
@@ -18,16 +19,14 @@ export default function Modulo3ContentSection() {
           <div className="mx-auto max-w-5xl space-y-8">
             
                
-                  < PageApresentacao1/>
+                < PageApresentacao1/>
                 
-                 
-                 
                 <FadeInWhenVisible>
-                  <Modulo3Objetivos />
+                  <PageApresentacao2 />
                 </FadeInWhenVisible>
 
                 <FadeInWhenVisible>
-                  <PageApresentacao2 />
+                  <PageConcluirApresentar />
                 </FadeInWhenVisible>
                 
 
@@ -37,7 +36,7 @@ export default function Modulo3ContentSection() {
                 
                 <div className="flex justify-center mt-8">
                   <Button asChild>
-                    <Link href="/ondeestamos">Próxima Página: Onde Estamos?</Link>
+                    <Link href="/metodosavaliativos">Próxima Página: Métodos Avaliativos</Link>
                   </Button>
                 </div>
             

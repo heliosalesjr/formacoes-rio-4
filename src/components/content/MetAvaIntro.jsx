@@ -30,11 +30,11 @@ const EvaluationTypes = () => {
       {/* Título Principal */}
       <div className="text-center space-y-6">
         <div className="flex items-center justify-center gap-3">
-          <div className="w-1 h-12 bg-gradient-to-b from-slate-500 to-blue-500 rounded-full"></div>
+          
           <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent">
-            Avaliação, Autoavaliação e avaliação entre pares como processos reflexivos
+            Autoavaliação e Avaliação entre Pares como processos reflexivos
           </h1>
-          <div className="w-1 h-12 bg-gradient-to-b from-blue-500 to-slate-500 rounded-full"></div>
+          
         </div>
         
         {/* Parágrafo Introdutório */}
@@ -55,8 +55,8 @@ const EvaluationTypes = () => {
 
         {/* Card - Introdução */}
         <div className="bg-white rounded-lg shadow-lg border border-slate-200 p-6 space-y-6">
-          <p className="text-slate-700 leading-relaxed">
-            No estudo prévio, vimos três tipos de avaliação que se complementam:
+          <p className="text-slate-700 leading-relaxed text-center">
+            Até aqui, vimos três tipos de avaliação que se complementam:
           </p>
         </div>
 
@@ -105,7 +105,7 @@ const EvaluationTypes = () => {
         {/* Card - Conclusão */}
         <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-lg border border-blue-200 p-6 space-y-6">
           <p className="text-slate-700 leading-relaxed">
-            No programa Aprendendo a Lidar com Dinheiro, lidamos com esses três tipos de avaliação. Mas, agora, o que interessa mesmo é <strong>olhar com mais calma para a avaliação formativa e reflexiva</strong>, que são aquelas que permitem entender como o processo foi vivido.
+            Agora queremos olhar com mais calma para a avaliação reflexiva, que ajuda a entender como o processo foi vivido.
           </p>
         </div>
       </div>

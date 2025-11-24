@@ -12,7 +12,7 @@ export default function Culminancia() {
       <main >
         <Hero
                 title="Culminância"
-                subtitle="Como funciona o programa “Aprendendo a lidar com dinheiro” da BEĨ Educação e a metodologia de aplicação do material"
+                subtitle="Como apresentar os resultados do projeto para a comunidade, e tornar esse momento significativo para os estudantes"
                 />
         
         <CulminanciaContentSection />

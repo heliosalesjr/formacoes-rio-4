@@ -11,8 +11,8 @@ export default function Smart() {
       <ProgressBar />
       <main >
         <Hero
-                title="Métodos Avaliativos"
-                subtitle="Como funciona o programa “Aprendendo a lidar com dinheiro” da BEĨ Educação e a metodologia de aplicação do material"
+                title="Avaliação"
+                subtitle="Como realizar autoavaliação e avaliação em pares para promover a reflexão"
                 />
         <MAContentSection />
       </main>

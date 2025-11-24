@@ -53,16 +53,16 @@ const PageApresentacao2 = () => {
           </div>
 
           <p className="text-slate-700 text-lg leading-relaxed">
-            Entender o papel da avaliação na ABP;
+            Compreender o papel da avaliação na Aprendizagem Baseada em Projetos (ABP) como parte do processo de aprendizagem, e não apenas como resultado final;
           </p>
           <p className="text-slate-700 text-lg leading-relaxed">
-            Planejar estratégias de autoavaliação e avaliação entre pares;
+            Planejar e aplicar estratégias de autoavaliação e avaliação entre pares que promovam reflexão, diálogo e protagonismo estudantil;
           </p>
           <p className="text-slate-700 text-lg leading-relaxed">
-            Organizar a culminância do projeto com base nas aprendizagens desenvolvidas;
+            Organizar a culminância do projeto de modo coerente com as aprendizagens desenvolvidas, valorizando o percurso e as produções dos estudantes;
           </p>
           <p className="text-slate-700 text-lg leading-relaxed">
-            Usar registros como apoio à avaliação e à devolutiva final.
+            Utilizar registros e devolutivas como ferramentas de acompanhamento, reflexão e comunicação dos resultados do projeto.
           </p>
           
         </div>

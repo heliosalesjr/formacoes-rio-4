@@ -3,20 +3,18 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { useEffect, useRef } from 'react';
-import { useSidebar } from '@/contexts/SidebarContext';
 import { FaPlus, FaArrowLeft } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const MARubrica = () => {
 
   const ref = useRef();
-  const { markAsViewed } = useSidebar();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          markAsViewed('rubrica');
+          // markAsViewed('rubrica');
         }
       },
       { threshold: 0.5 }
@@ -27,7 +25,7 @@ const MARubrica = () => {
     }
 
     return () => observer.disconnect();
-  }, [markAsViewed]);
+  }, []);
 
   const [expanded, setExpanded] = useState(false)
 
@@ -69,13 +67,11 @@ const MARubrica = () => {
             >
               <div className="max-w-3xl">
                 <h2 className="text-2xl md:text-4xl font-bold mb-4">
-                Lembrando da rubrica
-
+                  Lembrando da rubrica
                 </h2>
                 <p className='text-lg'>
-                    <strong>Antes de entrarmos na autoavaliação, vale retomar uma ferramenta apresentada no módulo anterior: a rubrica.
-                    </strong>A rubrica é uma tabela com critérios claros que descreve o que se espera em diferentes níveis de desempenho. Quando usada com os estudantes, ela torna mais visível o que está sendo avaliado e ajuda cada um a compreender com mais clareza onde está e o que ainda pode desenvolver.
-
+                  Antes de entrarmos na <strong className="bg-white/90 text-blue-800 px-1.5 py-0.5 rounded mx-0.5">autoavaliação</strong>, vale retomar uma ferramenta apresentada no módulo anterior: a rubrica.
+                  <strong className="bg-white/90 text-blue-800 px-1.5 py-0.5 rounded mx-0.5">A rubrica é uma tabela com critérios claros que descreve o que se espera</strong> em diferentes níveis de desempenho. Quando usada com os estudantes, ela <strong className="bg-white/90 text-blue-800 px-1.5 py-0.5 rounded mx-0.5">torna mais visível o que está sendo avaliado</strong> e ajuda cada um a compreender com mais clareza onde está e o que ainda pode desenvolver.
                 </p>
               </div>
             </motion.div>
@@ -87,33 +83,31 @@ const MARubrica = () => {
       <AnimatePresence>
         {expanded && (
           <motion.div
-            className="absolute inset-0 z-20 flex items-center justify-center px-6 text-center text-white bg-blue-800"
+            className="absolute inset-0 z-20 flex items-center justify-center px-6 text-center text-white bg-blue-900/90"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1.2 }}
           >
             <div className="max-w-3xl">
-
               <div className="text-base md:text-lg font-medium text-white pb-8 space-y-4">
                 <p className='font-bold'>
-                    Quando falamos de avaliação formativa e reflexiva, a rubrica pode ser uma ferramenta muito útil.
+                  Quando falamos de <strong className="bg-white text-blue-800 px-1.5 py-0.5 rounded mx-0.5">avaliação formativa e reflexiva</strong>, a rubrica pode ser uma ferramenta muito útil.
                 </p>
 
                 <ul className="list-disc list-inside space-y-2">
-                    <li>
-                    <span className="font-semibold">Para o(a) professor(a):</span> a rubrica funciona como um guia para observar o que os alunos já conseguem fazer e o que ainda estão desenvolvendo. Ela ajuda a acompanhar o progresso sem depender apenas de notas ou provas.
-                    </li>
-                    <li>
-                    <span className="font-semibold">Para os estudantes:</span> a rubrica funciona como um mapa: mostra onde estão no processo de aprendizagem e o que ainda precisam desenvolver. Isso facilita na hora de refletirem sobre o próprio desempenho e pensarem em como avançar.
-                    </li>
+                  <li>
+                    <strong className="bg-white text-blue-800 px-1.5 py-0.5 rounded mx-0.5">Para o(a) professor(a)</strong>: a rubrica funciona como um guia para observar o que os alunos já conseguem fazer e o que ainda estão desenvolvendo. <strong className="bg-white text-blue-800 px-1.5 py-0.5 rounded mx-0.5">Ela ajuda a acompanhar o progresso</strong> sem depender apenas de notas ou provas.
+                  </li>
+                  <li>
+                    <strong className="bg-white text-blue-800 px-1.5 py-0.5 rounded mx-0.5">Para os estudantes</strong>: a rubrica funciona como um mapa: mostra onde estão no processo de aprendizagem e o que ainda precisam desenvolver. Isso <strong className="bg-white text-blue-800 px-1.5 py-0.5 rounded mx-0.5">facilita na hora de refletirem sobre o próprio desempenho</strong> e pensarem em como avançar.
+                  </li>
                 </ul>
 
                 <p className='font-bold pt-4'>
-                    Isso é especialmente importante em momentos de autoavaliação ou quando os alunos avaliam colegas, temas que vamos ver a seguir.
+                  Isso é especialmente importante em <strong className="bg-white text-blue-800 px-1.5 py-0.5 rounded mx-0.5">momentos de autoavaliação</strong> ou quando os alunos avaliam colegas, temas que vamos ver a seguir.
                 </p>
-                </div>
-              
+              </div>
             </div>
           </motion.div>
         )}

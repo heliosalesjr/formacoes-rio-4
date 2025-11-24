@@ -30,11 +30,11 @@ const MAReflex = () => {
       {/* Título Principal */}
       <div className="text-center space-y-6">
         <div className="flex items-center justify-center gap-3">
-          <div className="w-1 h-12 bg-gradient-to-b from-slate-500 to-blue-500 rounded-full"></div>
+          
           <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent">
             O que significa "avaliar de forma reflexiva"?
           </h1>
-          <div className="w-1 h-12 bg-gradient-to-b from-blue-500 to-slate-500 rounded-full"></div>
+          
         </div>
         
         {/* Parágrafo Introdutório */}
@@ -77,17 +77,12 @@ const MAReflex = () => {
           </div>
         </div>
 
-        {/* Card - Requisitos da avaliação reflexiva */}
-        <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-lg border border-blue-200 p-6 space-y-6">
-          <blockquote className="border-l-4 border-blue-500 pl-6 italic text-slate-600 bg-white rounded-r-lg p-4">
-            Esse tipo de avaliação <strong>exige observação, escuta e registro.</strong>
-          </blockquote>
-        </div>
+        
 
         {/* Card - Como acontece */}
         <div className="bg-white rounded-lg shadow-lg border border-slate-200 p-6 space-y-6">
           <p className="text-slate-700 leading-relaxed">
-            Ela não acontece só nas apresentações finais. Pelo contrário, se constrói no cotidiano da sala, a partir da observação e do registro de situações comuns, mas cheias de significado.
+            Esse tipo de avaliação <strong>exige observação, escuta e registro.</strong> Ela não acontece só nas apresentações finais. Pelo contrário, se constrói no cotidiano da sala, a partir da observação e do registro de situações comuns, mas cheias de significado.
           </p>
         </div>
 

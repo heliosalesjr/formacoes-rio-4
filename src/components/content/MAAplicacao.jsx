@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import React from 'react'
+import Image from "next/image";
 
 const MAApplicacao = () => {
   const ref = useRef();
@@ -31,11 +32,11 @@ const MAApplicacao = () => {
       {/* Título Principal */}
       <div className="text-center space-y-6">
         <div className="flex items-center justify-center gap-3">
-          <div className="w-1 h-12 bg-gradient-to-b from-slate-500 to-blue-500 rounded-full"></div>
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent">
+          
+          <h1 className="text-4xl font-bold text-slate-600">
             Como aplicar a autoavaliação?
           </h1>
-          <div className="w-1 h-12 bg-gradient-to-b from-blue-500 to-slate-500 rounded-full"></div>
+          
         </div>
         
         {/* Parágrafo Introdutório */}
@@ -131,31 +132,25 @@ const MAApplicacao = () => {
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-6 space-y-4">
-              <p className="text-slate-700 leading-relaxed">
-                Essa é uma ferramenta visual simples: os estudantes preenchem uma folha dividida em três colunas.
-              </p>
-              
-              <div className="bg-purple-50 rounded-lg p-4 border border-purple-100">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <div className="bg-white rounded-lg p-3 text-center border border-purple-200">
-                    <span className="text-purple-600 font-bold">–</span>
-                    <p className="text-slate-700 font-medium">O que aprendi</p>
-                  </div>
-                  <div className="bg-white rounded-lg p-3 text-center border border-purple-200">
-                    <span className="text-purple-600 font-bold">–</span>
-                    <p className="text-slate-700 font-medium">O que fiz bem</p>
-                  </div>
-                  <div className="bg-white rounded-lg p-3 text-center border border-purple-200">
-                    <span className="text-purple-600 font-bold">–</span>
-                    <p className="text-slate-700 font-medium">O que posso melhorar</p>
-                  </div>
+                <p className="text-slate-700 leading-relaxed">
+                  Essa é uma ferramenta visual simples: os estudantes preenchem uma folha dividida em três colunas.
+                </p>
+
+                <div className="w-full">
+                  <Image
+                    src="/folha.png"
+                    alt="Folha de reflexão"
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto rounded-lg border border-purple-100"
+                  />
                 </div>
-              </div>
-              
-              <p className="text-slate-700 leading-relaxed">
-                É uma forma direta de incentivar a autorreflexão, principalmente com turmas mais jovens.
-              </p>
-            </AccordionContent>
+
+                <p className="text-slate-700 leading-relaxed">
+                  É uma forma direta de incentivar a autorreflexão, principalmente com turmas mais jovens.
+                </p>
+              </AccordionContent>
+
           </AccordionItem>
 
           {/* Escala avaliativa */}
@@ -176,19 +171,19 @@ const MAApplicacao = () => {
               <div className="bg-orange-50 rounded-lg p-4 border border-orange-100">
                 <div className="space-y-2">
                   <div className="flex items-start gap-2">
-                    <span className="text-orange-600 font-bold">–</span>
+                    <span className="text-orange-600 font-bold">1 -</span>
                     <p className="text-slate-700">Participação nas atividades</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-orange-600 font-bold">–</span>
+                    <span className="text-orange-600 font-bold">2 -</span>
                     <p className="text-slate-700">Organização</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-orange-600 font-bold">–</span>
+                    <span className="text-orange-600 font-bold">3 -</span>
                     <p className="text-slate-700">Colaboração com o grupo</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-orange-600 font-bold">–</span>
+                    <span className="text-orange-600 font-bold">4 -</span>
                     <p className="text-slate-700">Clareza ao apresentar o que aprendeu</p>
                   </div>
                 </div>
