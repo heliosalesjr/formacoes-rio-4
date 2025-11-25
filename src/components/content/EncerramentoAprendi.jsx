@@ -5,9 +5,10 @@ import { useSidebar } from '@/contexts/SidebarContext';
 import confetti from 'canvas-confetti'
 
 const checklistItems = [
-  'Entendi o passo a passo da elaboração de um PPDA.',
-  'Aprendi a interpretar a Matriz de habilidades (Quadro Geral das Etapas).',
-  'Conheci as ferramentas  SMART e 5W2H e suas aplicações em sala e com os projetos dos alunos.',
+  'Aprendi que avaliar um projeto é olhar para o caminho feito, não só para o resultado.',
+  'Percebi que a autoavaliação e o feedback entre colegas ajudam os estudantes a reconhecer o que aprenderam e como participaram.',
+  'Compreendi que a culminância é um fechamento com sentido: mostrar o percurso, compartilhar descobertas e dar visibilidade ao que foi feito.',
+  'Entendi que registrar o processo (falas, fotos, produções) ajuda a lembrar da caminhada e do que ela ensinou.',
   
 ]
 
@@ -53,7 +54,7 @@ const EncerramentoAprendi = () => {
 
   return (
     <div ref={ref}
-      id="encerramento-aprendi"className="scroll-mt-20 bg-white rounded-2xl shadow-2xl p-8 md:p-12 max-w-3xl mx-auto space-y-6">
+      id="encerramento-aprendi"className="scroll-mt-20 bg-white rounded-2xl shadow-2xl p-8 md:p-12 max-w-4xl mx-auto space-y-6">
       <h2 className="text-xl md:text-2xl font-bold text-slate-800 mb-4">
         NESTE MÓDULO EU:
       </h2>
@@ -87,7 +88,7 @@ const EncerramentoAprendi = () => {
 
       {allChecked && (
         <div className="text-green-600 font-semibold text-center text-lg mt-6">
-          🎉 Parabéns! Você completou este módulo!
+          🎉 Parabéns! Você completou o módulo final!
         </div>
       )}
     </div>

@@ -78,11 +78,7 @@ export default function Hero({ title, subtitle, buttonText, buttonHref = "#conte
 
       {/* Bottom Fade */}
       <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/10 to-transparent" />
-      
-      {/* Floating Elements */}
-      <div className="absolute top-10 left-10 w-2 h-2 bg-white/30 rounded-full animate-pulse" />
-      <div className="absolute top-32 right-20 w-1 h-1 bg-white/20 rounded-full animate-ping" />
-      <div className="absolute bottom-20 left-1/4 w-1.5 h-1.5 bg-white/25 rounded-full animate-bounce" />
+    
     </section>
   )
 }

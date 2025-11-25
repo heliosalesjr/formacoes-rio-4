@@ -183,14 +183,14 @@ export default function EncerramentoQuiz() {
   return (
     <div
       
-      className=" rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 shadow-2xl border border-slate-100"
+      className="mt-8 rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 shadow-2xl border border-slate-100"
     >
       <div ref={ref}
             id="encerramento-quiz" className="flex items-center justify-center gap-3 mb-8">
-        <div className="scroll-mt-20 mt-8 bg-white py-4 text-center">
-          <h2 className="text-2xl md:text-4xl font-bold text-slate-700 py-4">
-            Encerrando o Módulo 4
-          </h2>
+        <div className="scroll-mt-20 mt-8 bg-white text-center">
+          <h1 className="text-4xl font-bold bg-gradient-to-r pb-8 from-blue-700 to-green-700 bg-clip-text text-transparent">
+            Quiz: Culminância e Encerramento
+          </h1>
 
           {/* Subtítulo */}
           <p className="text-slate-700 text-base md:text-lg max-w-3xl mx-auto">

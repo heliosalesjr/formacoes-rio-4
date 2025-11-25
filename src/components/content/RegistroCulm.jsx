@@ -15,7 +15,7 @@ const RegistroCulm = () => {
           markAsViewed('depois-culminancia');
         }
       },
-      { threshold: 0.5 }
+      { threshold: 1 }
     );
 
     if (ref.current) {
@@ -26,10 +26,10 @@ const RegistroCulm = () => {
   }, [markAsViewed]);
 
   return (
-    <div ref={ref} id="depois-culminancia" className="scroll-mt-20 rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 shadow-2xl border border-slate-100 space-y-12">
+    <div className=" rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 shadow-2xl border border-slate-100 space-y-12">
       
       {/* Título Principal */}
-      <div className="text-center space-y-6">
+      <div ref={ref} id="depois-culminancia"  className="scroll-mt-20 text-center space-y-6">
         <div className="flex items-center justify-center gap-3">
           
           <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent">
