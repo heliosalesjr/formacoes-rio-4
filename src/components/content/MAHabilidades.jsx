@@ -1,15 +1,17 @@
 "use client";
 import { useEffect, useRef } from 'react';
 import React from 'react'
+import { useSidebar } from '@/contexts/SidebarContext';
 
 const MAHabilidades = () => {
   const ref = useRef();
-
+  const { markAsViewed } = useSidebar();
+  
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // markAsViewed('habilidades-autoavaliacao');
+          markAsViewed('habilidades-autoavaliacao');
         }
       },
       { threshold: 0.5 }

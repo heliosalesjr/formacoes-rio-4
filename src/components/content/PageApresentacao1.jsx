@@ -2,30 +2,31 @@
 import { useEffect, useRef } from 'react';
 import React from 'react'
 import Image from 'next/image'
-
+import { useSidebar } from '@/contexts/SidebarContext';
 const PageApresentacao1 = () => {
   const ref = useRef();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          // markAsViewed('apresentacao-1');
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
+    const { markAsViewed } = useSidebar();
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            markAsViewed('apre-1');
+          }
+        },
+        { threshold: 0.5 }
+      );
+  
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+  
+      return () => observer.disconnect();
+    }, [markAsViewed]);
 
   return (
-    <div ref={ref} id="apresentacao-1" className="scroll-mt-20 rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 shadow-2xl border border-slate-100 space-y-8">
-      <div className="grid gap-8 md:grid-cols-3 items-stretch">
+    <div  className=" rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 shadow-2xl border border-slate-100 space-y-8">
+      <div ref={ref} id="apre-1" className="scroll-mt-20 grid gap-8 md:grid-cols-3 items-stretch">
         {/* Conteúdo - 2/3 da largura */}
         <div className="md:col-span-2 space-y-6 flex flex-col justify-center">
           <div className="flex items-center gap-3">

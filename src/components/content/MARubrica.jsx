@@ -5,16 +5,19 @@ import Image from 'next/image'
 import { useEffect, useRef } from 'react';
 import { FaPlus, FaArrowLeft } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useSidebar } from '@/contexts/SidebarContext';
 
 const MARubrica = () => {
 
   const ref = useRef();
-
+  
+  const { markAsViewed } = useSidebar();
+  
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // markAsViewed('rubrica');
+          markAsViewed('rubrica');
         }
       },
       { threshold: 0.5 }
@@ -28,6 +31,26 @@ const MARubrica = () => {
   }, []);
 
   const [expanded, setExpanded] = useState(false)
+
+ 
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            markAsViewed('rubrica');
+          }
+        },
+        { threshold: 0.5 }
+      );
+  
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+  
+      return () => observer.disconnect();
+    }, [markAsViewed]);
+  
 
   return (
     <motion.div

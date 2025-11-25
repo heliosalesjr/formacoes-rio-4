@@ -7,7 +7,7 @@ const navigation = {
   'Apresentação': {
     path: '/',
     components: [
-      { id: 'apresentacao-1', title: 'Apresentação do Curso' },
+      { id: 'apre-1', title: 'Apresentação do Curso' },
       
       { id: 'ao-final', title: 'Ao final do módulo...' },
       { id: 'concluir', title: 'Concluir e Apresentar' },
@@ -55,7 +55,10 @@ const navigation = {
   'Encerramento': {
     path: '/encerramento',
     components: [
+      { id: 'encerramento-intro', title: 'Encerrando o Módulo 4 - Vídeo' },
       { id: 'encerramento-quiz', title: 'Encerrando o Módulo 4 - Quiz!' },
+      { id: 'encerramento-aprendi', title: 'O que aprendi?' },
+      { id: 'encerramento-obrigado', title: 'Agradecimentos' },
       
       
     ]

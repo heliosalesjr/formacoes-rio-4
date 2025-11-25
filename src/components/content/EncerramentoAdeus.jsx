@@ -1,6 +1,33 @@
+"use client";
+
+import React, {  useEffect, useRef } from 'react'
+
+import { useSidebar } from '@/contexts/SidebarContext';
+
 import { FaAward, FaBook, FaUsers } from "react-icons/fa";
 
 export default function EncerramentoAdeus() {
+
+    const ref = useRef();
+      const { markAsViewed } = useSidebar();
+    
+      useEffect(() => {
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting) {
+              markAsViewed('encerramento-obrigado');
+            }
+          },
+          { threshold: 1 }
+        );
+    
+        if (ref.current) {
+          observer.observe(ref.current);
+        }
+    
+        return () => observer.disconnect();
+      }, [markAsViewed]);
+
   const etapas = [
     {
       icon: <FaUsers className="w-8 h-8 text-blue-600" />,
@@ -20,9 +47,9 @@ export default function EncerramentoAdeus() {
   ];
 
   return (
-    <div className="rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 md:p-12 shadow-2xl border border-slate-100">
+    <div className=" rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 md:p-12 shadow-2xl border border-slate-100">
       {/* Título Principal */}
-      <div className="text-center mb-12">
+      <div  ref={ref} id="encerramento-obrigado"  className="scroll-mt-20 text-center mb-12">
         <h1 className="text-4xl font-bold bg-gradient-to-r pb-8 from-blue-700 to-green-700 bg-clip-text text-transparent">
           Parabéns por Concluir esta Jornada!
         </h1>
