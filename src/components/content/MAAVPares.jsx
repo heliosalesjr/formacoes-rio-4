@@ -249,8 +249,7 @@ const MAAvPares = () => {
       </div>
 
         <div className="space-y-6 pb-4">
-                <h1 className='text-center font-bold text-3xl text-slate-600'>Conclusão</h1>
-                <p className="text-slate-700 text-lg leading-relaxed">
+                <p className="text-slate-700 text-center text-lg leading-relaxed">
                     A avaliação entre pares é uma <strong>etapa importante</strong> para que os estudantes compreendam o <strong>valor do feedback </strong>como parte do processo de aprendizagem. Ao observar e comentar o trabalho do colega, buscando fazer isso com <strong>respeito e objetividade</strong>, começam a desenvolver a <strong>capacidade de argumentar</strong>, justificar suas observações e <strong>acolher diferentes pontos de vista</strong>.
                 </p>
         </div>

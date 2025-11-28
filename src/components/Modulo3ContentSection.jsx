@@ -22,12 +22,14 @@ export default function Modulo3ContentSection() {
                 < PageApresentacao1/>
                 
                 <FadeInWhenVisible>
-                  <PageApresentacao2 />
+                  <PageConcluirApresentar />
                 </FadeInWhenVisible>
 
                 <FadeInWhenVisible>
-                  <PageConcluirApresentar />
+                  <PageApresentacao2 />
                 </FadeInWhenVisible>
+
+                
                 
 
                 
