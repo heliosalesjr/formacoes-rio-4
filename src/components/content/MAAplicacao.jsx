@@ -165,7 +165,7 @@ const MAApplicacao = () => {
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-6 space-y-4">
               <p className="text-slate-700 leading-relaxed">
-                Outra possibilidade é montar uma escala de 1 a 5 para que os estudantes avaliem a si mesmos em alguns aspectos combinados previamente:
+                Outra possibilidade é montar uma escala de 1 a 4 para que os estudantes avaliem a si mesmos em alguns aspectos combinados previamente:
               </p>
               
               <div className="bg-orange-50 rounded-lg p-4 border border-orange-100">
